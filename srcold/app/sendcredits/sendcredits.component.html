@@ -1,0 +1,27 @@
+<div class="col-sm-6 auction" style="text-align: center">
+  <div class="panel panel-default ">
+    <div class="panel-heading">Send Credits</div>
+    <div class="panel-body">
+      <form class="form-inline" action="/action_page.php">
+        <div class="form-group" style="text-align: right">
+          <table class="table">
+              <thead class="tablecolor">
+                 <tr>
+                    <th>Receiver Address</th>
+                    <th>Credits</th>
+                    <th></th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr *ngFor="let element of sendCreditsArray">
+                    <td>{{ element.receiver }}</td>
+                    <td>{{ element.credit }}</td>
+                    <td><button type="button" class="btn btn-default btn-lg" (click)="sendcredits(element.receiver,element.credit)">Send</button></td>
+                 </tr>
+              </tbody>
+           </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

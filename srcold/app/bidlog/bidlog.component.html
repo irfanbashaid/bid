@@ -1,0 +1,57 @@
+<div class="container boxshadow" id="containerone">
+        <h1 class="pull-left">Bid History</h1>
+   </div>
+   <div class="container content boxshadow">
+     <div class="row">
+       <div class="col-sm-6">
+           <div class="panel panel-warning">
+               <div class="panel-heading">BID LOG</div>
+               <div class="panel-body">
+                   <table class="table table-bordered">
+                       <thead>
+                         <tr>
+                           <th>Auction ID</th>
+                           <th>Product Name</th>
+                           <th>Bid History</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                          <tr *ngFor = "let history of historyarray">  
+                            <td>{{history.auctionid}}</td>
+                            <td>{{history.productname}}</td>
+                            <td>{{history.amount}}</td>
+                            <td>{{history.time}}</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                     </table>
+               </div>
+             </div>
+       </div>
+       <div class="col-sm-6">
+           <div class="panel panel-warning">
+               <div class="panel-heading">NAME</div>
+               <div class="panel-body">
+                   <table class="table table-bordered">
+                       <thead>
+                         <tr>
+                           <th>Amount</th>
+                           <th>Date And Time</th>                        
+                         </tr>
+                       </thead>
+                       <tbody>
+                          <tr *ngFor = "let history of historyarray">  
+                            <td>{{history.auctionid}}</td>
+                            <td>{{history.productname}}</td>
+                            <td>{{history.amount}}</td>
+                            <td>{{history.time}}</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                     </table>
+               </div>
+             </div>
+         </div>
+     </div>
+     
+   </div>

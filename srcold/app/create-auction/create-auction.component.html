@@ -1,0 +1,26 @@
+<div class="col-sm-9 auction" style="text-align: center">
+  <div class="panel panel-default ">
+    <div class="panel-heading" style="color: white"><b>Enter Auction Details</b></div>
+    <div class="panel-body">
+      <form class="form-inline" action="/action_page.php" style="text-align: center">
+        <div class="form-group" style="text-align: right">
+          <label for="text">Product Name:</label>&nbsp;&nbsp;&nbsp;
+          <input type="text"  class="form-control" id="productname" #productname autocomplete="off" ><br>
+          <br><br><label for="text">Start Time:</label>&nbsp;&nbsp;&nbsp;
+          <input type="datetime-local" class="form-control" id="starttime" #starttime autocomplete="off" ><br>
+          <br><br><label for="text">End Time:</label>&nbsp;&nbsp;&nbsp;
+          <input type="datetime-local" class="form-control" id="endtime" #endtime autocomplete="off" ><br>
+          <br><br><label for="text">Base Price<small>(in ether)</small>:</label>&nbsp;&nbsp;&nbsp;
+          <input type="text"  class="form-control" id="baseprice" #baseprice autocomplete="off" ><br>
+          <br><br><label for="text">Bid Increment<small>(in ether)</small>:</label>&nbsp;&nbsp;&nbsp;
+          <input type="text"  class="form-control" id="bidincrement" #bidincrement autocomplete="off" ><br>
+          <br><br><label for="text">Min Bid<small>(in ether)</small>:</label>&nbsp;&nbsp;&nbsp;
+          <input type="text"  class="form-control" id="minimumbid" #minimumbid autocomplete="off" ><br>
+          <br><br><label for="text">Reset Time<small>(in seconds)</small>:</label>&nbsp;&nbsp;&nbsp;
+          <input type="text"  class="form-control" id="resettime" #resettime autocomplete="off" ><br>
+          <br><button class="btn btn-warning fonttransformation " (click)="createauction()" type="button">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
